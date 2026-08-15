@@ -1,0 +1,2 @@
+Hello this is updated content for the writefile method again
+New content
