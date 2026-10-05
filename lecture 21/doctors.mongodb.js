@@ -20,21 +20,21 @@ use("HospitalDB")
     //salary:"350000"
 //})
 
-db.Doctors.insertMany([
-    {
-    name:"Dr.Alex",
-    specialization:"Pediatrician",
-    experience:"10",
-    fees:"1500",
-    salary:"200000",
-},
-{
-        name:"Dr. John",
-        specialization:"Neurologist",
-         experience:10,
-         fees:500,
-         salary:1000000,
-         department:"Neurology",
-     }
-])
+//db.Doctors.insertMany([
+  //  {
+    //name:"Dr.Alex",
+    //specialization:"Pediatrician",
+    //experience:"10",
+    //fees:"1500",
+    //salary:"200000",
+//},
+//{
+  //      name:"Dr. John",
+    //    specialization:"Neurologist",
+      //   experience:10,
+        // fees:500,
+         //salary:1000000,
+         //department:"Neurology",
+    // }
+//])
 
