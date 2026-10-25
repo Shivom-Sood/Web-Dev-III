@@ -11,21 +11,21 @@ use("HospitalDB")
 //   { name: "Dr.Vinay" },
 //   { $rename: { specialiaztion: "specialization" } }
 // )
- db.Doctors.aggregate(
-     [
-         {$project:{
-           name:1,
-           fees:1,
-           salary:1,
-           experience:1,
-           _id:0
-         }
+//  db.Doctors.aggregate(
+//      [
+//          {$project:{
+//            name:1,
+//            fees:1,
+//            salary:1,
+//            experience:1,
+//            _id:0
+//          }
 
-         }
-         ,{
-            $match:{
-                department:"Cardiology"
-            }
-         }
-     ]
- )
+//          }
+//          ,{
+//             $match:{
+//                 department:"Cardiology"
+//             }
+//          }
+//      ]
+//  )
