@@ -1,31 +1,76 @@
 use("HospitalDB")
-// db.Doctors.insertMany([
-//   { name: "Dr.Meera",  specialization: "Cardiology",  experience: 15, fees: 2200, salary: 900000 },
-//   { name: "Dr.Arjun",  specialization: "Dermatology", experience: 7,  fees: 1200, salary: 400000 },
-//   { name: "Dr.Sana",   specialization: "Gynecology",  experience: 12, fees: 1600, salary: 650000 },
-//   { name: "Dr.Rohan",  specialization: "ENT",         experience: 5,  fees: 900,  salary: 300000 },
-//   { name: "Dr.Priya",  specialization: "Oncology",    experience: 18, fees: 3000, salary: 1200000 },
-//   { name: "Dr.Karan",  specialization: "Ortho",       experience: 8,  fees: 1500, salary: 450000 }
-// ])
-// db.Doctors.updateOne(
-//   { name: "Dr.Vinay" },
-//   { $rename: { specialiaztion: "specialization" } }
-// )
-//  db.Doctors.aggregate(
-//      [
-//          {$project:{
-//            name:1,
-//            fees:1,
-//            salary:1,
-//            experience:1,
-//            _id:0
-//          }
 
-//          }
-//          ,{
+// db.doctors.insert([
+//     {
+//         name:"Dr. Anya",
+//         specialization:"Cardiologyst",
+//         experience:4,
+//         fees:900,
+//         salary:3000000,
+//         department:"Cardiology",
+//     },
+//     {
+//         name:"Dr. Rahul",
+//         specialization:"Neurologist",
+//         experience:3,
+//         fees:700,
+//         salary:900000,
+//         department:"Neurology",
+//     },
+//     {
+//         name:"Dr. Kevin",
+//         specialization:"Orthopedist",
+//         experience:6,
+//         fees:1000,
+//         salary:1500000,
+//         department:"Orthopedics",
+//     }
+// ])
+
+
+// db.doctors.aggregate(
+//     [
+//         {
 //             $match:{
 //                 department:"Cardiology"
 //             }
-//          }
-//      ]
-//  )
+//         }
+//         ,{
+//             $project:{
+//                 name:1,
+//                 fees:1,
+//                 salary:1,
+//                 experience:1,
+//                 _id:0
+//             }
+//         }
+//         ,{
+//             $group:{
+//                 _id:"$experience",
+//                 totalSalary:{$sum:"$salary"},
+//                 avgSalary:{$avg:"$salary"},
+//                 maxSalary:{$max:"$salary"},
+//                 minSalary:{$min:"$salary"},
+//                 totalDoctors:{$sum:1}
+//             }
+//         }
+//         ,{
+//             $sort:{
+//                 totalSalary:-1
+//             }
+//         }
+//         // ,{
+//         //     $limit:1
+//         // }
+//         ,{
+//             $count:"totalSalary"
+//         }
+//     ]
+// )
+
+// db.doctors.getIndexes()
+db.doctors.find({name: "Dr. Rahul"})
+// db.doctors.find({_id: ObjectId('6adae7dd6e940196c8850667')})
+
+// db.doctors.createIndex({name:1})
+// db.doctors.getIndexes()
