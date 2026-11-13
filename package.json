@@ -1,0 +1,54 @@
+{
+  "name": "web-dev-iii",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "agent-base": "^6.0.2",
+    "asynckit": "^0.4.0",
+    "axios": "^1.19.0",
+    "bcrypt": "^6.0.0",
+    "call-bind-apply-helpers": "^1.0.2",
+    "combined-stream": "^1.0.8",
+    "debug": "^4.4.3",
+    "delayed-stream": "^1.0.0",
+    "dunder-proto": "^1.0.1",
+    "es-define-property": "^1.0.1",
+    "es-errors": "^1.3.0",
+    "es-object-atoms": "^1.1.2",
+    "es-set-tostringtag": "^2.1.0",
+    "express": "^5.3.0",
+    "follow-redirects": "^1.16.0",
+    "form-data": "^4.0.6",
+    "function-bind": "^1.1.2",
+    "get-intrinsic": "^1.3.0",
+    "get-proto": "^1.0.1",
+    "gopd": "^1.2.0",
+    "has-symbols": "^1.1.0",
+    "has-tostringtag": "^1.0.2",
+    "hasown": "^2.0.4",
+    "https-proxy-agent": "^5.0.1",
+    "math-intrinsics": "^1.1.0",
+    "mime-db": "^1.52.0",
+    "mime-types": "^2.1.35",
+    "mongoose": "^9.12.1",
+    "ms": "^2.1.3",
+    "nodemon": "^3.1.14",
+    "proxy-from-env": "^2.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shivom-Sood/Web-Dev-III.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Shivom-Sood/Web-Dev-III/issues"
+  },
+  "homepage": "https://github.com/Shivom-Sood/Web-Dev-III#readme"
+}
